@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TCBlobDownload"
-  s.version      = "1.5.0"
+  s.version      = "1.5.0.1"
   s.summary      = "Competitive large files downloads for iOS"
   s.homepage     = "https://github.com/thibaultCha/TCBlobDownload"
   s.license      = 'MIT'
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.ios.deployment_target = '5.1.1'
   s.source       = {
-    :git => "https://github.com/thibaultCha/TCBlobDownload.git",
+    :git => "https://github.com/Kloudzilla/TCBlobDownload.git",
     :tag => "1.5.0"
   }
   s.source_files = 'TCBlobDownload/TCBlobDownload/**/*.{h,m}'

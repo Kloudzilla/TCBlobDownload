@@ -144,12 +144,12 @@ NSString * const TCHTTPStatusCode = @"httpStatus";
         [self willChangeValueForKey:@"isExecuting"];
         [self.connection start];
         // Start the speed timer to schedule speed download on a periodic basis
-//        self.speedTimer = [NSTimer scheduledTimerWithTimeInterval:1.0
-//                                                           target:self
-//                                                         selector:@selector(updateTransferRate)
-//                                                         userInfo:nil
-//                                                          repeats:YES];
-//        [runLoop addTimer:self.speedTimer forMode:NSRunLoopCommonModes];
+        self.speedTimer = [NSTimer scheduledTimerWithTimeInterval:1.0
+                                                           target:self
+                                                         selector:@selector(updateTransferRate)
+                                                         userInfo:nil
+                                                          repeats:YES];
+        [runLoop addTimer:self.speedTimer forMode:NSRunLoopCommonModes];
         [runLoop run];
         [self didChangeValueForKey:@"isExecuting"];
     }
